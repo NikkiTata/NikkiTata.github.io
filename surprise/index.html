@@ -95,8 +95,6 @@
 		together.setMilliseconds(0);
 
 		if (!document.createElement('canvas').getContext) {
-			document.getElementById('MyAudioElement').muted = false;
-			document.getElementById('MyAudioElement').play()
 			var msg = document.createElement("div");
 			msg.id = "errorMsg";
 			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
@@ -106,6 +104,8 @@
 			$("#copyright").css("bottom", "10px");
 		    document.execCommand("stop");
 		} else {
+			document.getElementById('MyAudioElement').muted = false;
+			document.getElementById('MyAudioElement').play()
 			setTimeout(function () {
 				startHeartAnimation();
 			}, 20000);
