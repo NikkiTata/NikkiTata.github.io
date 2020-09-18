@@ -27,6 +27,8 @@
 </head>
 
 <body>
+
+  
 <div style="position:relative">
   <div style="position:absolute;left:0;top:0">
   	<div id="mainDiv">
@@ -34,7 +36,7 @@
 			<div id="code">
 <pre style='color:#55cc66'><html><body style='color:#55cc66'><pre><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#aa3333;font-weight:bold; '>stdio.h</span><span style='color:#800000; '>></span> 
 
-<span style='color:#508050; font-weight:bold; '>Char</span> chars<span style='color:#808030; '>[</span><span style='color:#808030; '>]</span><span style='color:#808030; '>=</span><span style='color:#800080; '>{</span><span style='color:#778c77; '>73</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>116</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>39</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>115</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>97</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>110</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>105</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>99</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>101</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>102</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>101</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>101</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>108</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>105</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>110</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>103</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>119</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>104</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>101</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>110</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>121</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>111</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>117</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>107</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>110</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>111</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>119</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>116</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>104</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>97</span><span style='color:#800080; '>}</span><span style='color:#800080; '>;</span>
+<span style='color:#508050; font-weight:bold; '>int</span> nums<span style='color:#808030; '>[</span><span style='color:#808030; '>]</span><span style='color:#808030; '>=</span><span style='color:#800080; '>{</span><span style='color:#778c77; '>73</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>116</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>39</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>115</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>97</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>110</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>105</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>99</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>101</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>102</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>101</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>101</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>108</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>105</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>110</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>103</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>119</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>104</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>101</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>110</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>121</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>111</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>117</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>107</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>110</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>111</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>119</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>32</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>116</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>104</span><span style='color:#808030; '>,</span><span style='color:#778c77; '>97</span><span style='color:#800080; '>}</span><span style='color:#800080; '>;</span>
 
 <span style='color:#508050; font-weight:bold; '>int</span> <span style='color:#aa3333;font-weight:bold; '>main</span><span style='color:#808030; '>(</span><span style='color:#508050; font-weight:bold; '>void</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
 	<span style='color:#508050; font-weight:bold; '>string</span> <span style='color:#508050; '>str</span> <span style='color:#aa3333; font-weight:bold;'>=</span> <span style='color:#800000; '>"</span><span style='color:#508050; '>Happy</span><span style='color:#508050; '> Birthday</span><span style='color:#508050; '> !</span><span style='color:#508050; '>!</span><span style='color:#508050; '>!</span><span style='color:#800000; '>"</span>
@@ -43,6 +45,7 @@
 <span style='color:#800080; '>}</span></pre>
 			</div>
 			<div id="loveHeart">
+
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
@@ -71,6 +74,11 @@
     <canvas id="canvas">Canvas is not supported in your browser.</canvas>
   </div>
 
+ 	<audio controls autoplay hidden loop>
+		<source src="cut_bday_song.mp3"></source>
+		Your browser isn't invited for super fun audio time.
+    </audio>
+
 </div>
   <script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
@@ -95,7 +103,6 @@
 			setTimeout(function () {
 				startHeartAnimation();
 			}, 5000);
-
 			timeElapse(together);
 			setInterval(function () {
 				timeElapse(together);
