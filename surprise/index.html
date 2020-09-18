@@ -74,7 +74,7 @@
     <canvas id="canvas">Canvas is not supported in your browser.</canvas>
   </div>
 
- 	<audio controls autoplay hidden loop>
+ 	<audio class="song" controls hidden loop>
 		<source src="cut_bday_song.mp3"></source>
 		Your browser isn't invited for super fun audio time.
     </audio>
@@ -101,6 +101,8 @@
 		    document.execCommand("stop");
 		} else {
 			setTimeout(function () {
+			    var audio = $('.song')[0];
+                audio.play();
 				startHeartAnimation();
 			}, 5000);
 			timeElapse(together);
