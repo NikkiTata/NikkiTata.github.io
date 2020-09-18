@@ -77,14 +77,33 @@
     <canvas id="canvas">Canvas is not supported in your browser.</canvas>
   </div>
 
- 	<audio class="song" controls hidden loop>
+ 	<audio class="song" id="MyAudioElement" controls hidden loop>
 		<source src="cut_bday_song.mp3"></source>
 		Your browser isn't invited for super fun audio time.
     </audio>
 
 </div>
   <script type="text/javascript">
-
+		document.getElementById('MyAudioElement').play()
+		// JavaScript
+// Wrap the native DOM audio element play function and handle any autoplay errors
+Audio.prototype.play = (function(play) {
+return function () {
+  var audio = this,
+      args = arguments,
+      promise = play.apply(audio, args);
+  if (promise !== undefined) {
+    promise.catch(_ => {
+      // Autoplay was prevented. This is optional, but add a button to start playing.
+      var el = document.createElement("button");
+      el.innerHTML = "Play";
+      el.addEventListener("click", function(){play.apply(audio, args);});
+      this.parentNode.insertBefore(el, this.nextSibling)
+    });
+  }
+};
+})(Audio.prototype.play);
+		
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
@@ -115,8 +134,6 @@
 
 			adjustCodePosition();
 			$("#code").typewriter();
-		    var audio = $('.song')[0];
-            audio.play();
 		}
   </script>
   <script type="text/javascript" src="js/fireworks.js"></script>
